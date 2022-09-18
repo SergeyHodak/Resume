@@ -8,13 +8,26 @@
     <meta http-equiv="X-UA-Compatible"
           content="ie=edge">
     <title>Resume</title>
-    <!-- CSS only -->
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
           crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <!--fonts start-->
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rajdhani:wght@300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap"
+          rel="stylesheet">
+    <!--fonts finish-->
     <style>
         .the-text-is-white {
             color: white;
@@ -22,11 +35,26 @@
         .font-text {
             font-family: 'Major Mono Display', monospace;
         }
+        .font-of-lists {
+            font-family: 'Rajdhani', sans-serif;
+        }
+        .header-background-color {
+            background-color: Gainsboro;
+        }
+        .right-column-text-font {
+            font-family: 'Prompt', sans-serif;
+        }
+        .date {
+            float:right;
+        }
+        .indent-the-text {
+            text-indent: 5%;
+        }
     </style>
 </head>
 <body>
     <div class="container mt-3">
-        <div class="row row-cols-1 row-cols-md-2 g-10">
+        <div class="row row-cols-1 row-cols-md-3 g-10">
             <div class="col the-text-is-white">
                 <div class="card"  style="background-color:#33475b">
                     <div class="card-title" align="center">
@@ -37,20 +65,151 @@
                     </div>
                     <hr class="border border-white border-2 opacity-100 col-11">
                     <div class="card-body">
-                        <div class="card-title">
+                        <address>
                             <h5>CONTACTS</h5>
-                        </div>
-                        <div class="card-text font-text">
-                            <h7>+380934516875</h7>
-                        </div>
+                            <div class="font-of-lists">
+                                <div><h6>+380934516875</h6></div>
+                                <div><h6>sergey.hodak3@gmail.com</h6></div>
+                                <div><h6><a href="https://github.com/SergeyHodak">Github</a></h6></div>
+                                <div><h6><a href="https://www.linkedin.com/in/сергій-ходак-081455250/">Linkedin</a></h6></div>
+                                <div><h6>Dnipro, Ukraine</h6></div>
+                            </div>
+                        </address>
+                        <br>
+                        <section>
+                            <h5>TECH SKILLS</h5>
+                            <div class="font-of-lists">
+                                <div><h6>Java</h6></div>
+                                <div><h6>JDBC, SQL, JSON</h6></div>
+                                <div><h6>Hibernate, Servlets, Tomcat</h6></div>
+                                <div><h6>Spring, Spring Boot</h6></div>
+                                <div><h6>H2 Database, MySQL, PostgeSQL</h6></div>
+                                <div><h6>HTML, CSS, Bootstrap</h6></div>
+                                <div><h6>IntelliJ IDEA, Postman</h6></div>
+                                <div><h6>Heroku deploy, Git</h6></div>
+                                <div><h6>Unit tests</h6></div>
+                            </div>
+                        </section>
+                        <br>
+                        <section>
+                            <h5>SOFT SKILLS</h5>
+                            <div class="font-of-lists">
+                                <div><h6>Organized</h6></div>
+                                <div><h6>Willingness to learn</h6></div>
+                                <div><h6>Ability to work in a team (Team lead of two projects [
+                                    <a href="https://github.com/SergeyHodak/GoIT_Java_Core_Online_5_Project_1">1</a>,
+                                    <a href="https://github.com/SergeyHodak/JavaDevelopersTeamProjectGroup2"> 2</a>])</h6></div>
+                                <div><h6>Scrum, Kanban</h6></div>
+                                <div><h6>Trello, Google Meet, Miro, Zoom</h6></div>
+                            </div>
+                        </section>
+                        <br>
+                        <section>
+                            <h5>LANGUAGES</h5>
+                            <div class="font-of-lists">
+                                <div><h6>Ukrainian — native</h6></div>
+                                <div><h6>Russian — fluent</h6></div>
+                                <div><h6>English — with dictionary</h6></div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Text.</p>
+                        <section>
+                            <h5 class="header-background-color">SUMMARY</h5>
+                            <div>
+                                <h6 class="right-column-text-font">
+                                    I changed the direction of work, learned a lot on my own, and completed a 10-month
+                                    Java developer course, now I am a junior Java developer. I studied hard and now
+                                    I want to put my knowledge into practice. I want to develop as a specialist and be
+                                    as efficient as possible in my new job. I know the more you work yourself, the
+                                    better the result will be!
+                                </h6>
+                            </div>
+                        </section>
+                        <br>
+                        <section>
+                            <h5 class="header-background-color">PROJECTS</h5>
+                            <div class="right-column-text-font">
+                                <h6>
+                                    <a href="https://github.com/SergeyHodak/JavaDevelopersTeamProjectGroup2">GoIT Notes</a> <br>
+                                    The project for writing notes. Command project. Part of the code that is responsible for
+                                    checking the entered text with the email form. Review code, other project developers.
+                                    Work on entities, migrations. Part of the security, when viewing the note on the links.
+                                    Organization of a meeting once a day to discuss what has been done and what needs to be done.<br>
+                                    Spring Boot, Gradle, HTML, CSS, Bootstrap, Thymeleaf, PostgeSQL, H2 Database, Heroku.
+                                </h6>
+                                <br>
+                                <h6>
+                                    <a href="https://github.com/SergeyHodak/JD5HW8SergeyHodak">Product management</a> <br>
+                                    The project for easy work with manufacturers and products.<br>
+                                    Spring Boot, Gradle, HTML, Thymeleaf, H2 Database, Bootstrap, Heroku.
+                                </h6>
+                                <br>
+                                <h6>
+                                    <a href="https://github.com/SergeyHodak/GoIT_Java_Core_Online_5_Project_1">Telegram Currency Bot</a><br>
+                                    A bot that sends the current value of currencies. Need to start it manually. Command project.
+                                    Bot registration, settings in the bot phaser, initialization for connecting the bot from the code,
+                                    generation of the bot logic diagram, calls, help with the git, recording a video for working with the git,
+                                    personal calls to work on some part of the code, explaining the work of some pieces of code to those who
+                                    have had difficulty understanding.<br>
+                                    Java, REST API, HTTP, Maven.
+                                </h6>
+                            </div>
+                        </section>
+                        <br>
+                        <section>
+                            <h5 class="header-background-color">WORK EXPERIENCE</h5>
+                            <div class="right-column-text-font">
+                                <h6>
+                                    Atlant M Dnipro<span class="date">January 2020 - October 2020 | Ukraine/Dnipro</span><br>
+                                    Master to repair vehicles<br>
+                                    <br>
+                                    <div class="indent-the-text">
+                                        <li>repair of electrical equipment, Volkswagen cars</li>
+                                        <li>maintenance</li>
+                                        <li>other mechanic jobs</li>
+                                    </div>
+                                </h6>
+                                <br>
+                                <h6>
+                                    Interpipe NTZ<span class="date">May 2015 - August 2015 | Ukraine/Dnipro</span><br>
+                                    Electro-Mechanic<br>
+                                    <br>
+                                    <div class="indent-the-text">
+                                        <li>repair of starters and generators for: KAMAZ, KrAZ, Gazel, armoured vehicle, MAN</li>
+                                        <li>repair of electrical equipment, lighting, trailers</li>
+                                    </div>
+                                </h6>
+                                <br>
+                                <h6>
+                                    EVRAZ DMZ them. Petrovsky<span class="date">February 2015 - May 2015 | Ukraine/Dnipro</span><br>
+                                    Electro-Mechanic<br>
+                                    <br>
+                                    <div class="indent-the-text">
+                                        <li>electrician, electrical equipment repair on trucks: KAMAZ, KrAZ</li>
+                                    </div>
+                                </h6>
+                            </div>
+                        </section>
+                        <br>
+                        <section>
+                            <h5 class="header-background-color">EDUCATION</h5>
+                            <div class="right-column-text-font">
+                                <h6>
+                                    GO-IT<br>
+                                    Java Developer<span class="date">November 2021 - September 2022 | Ukraine/Kyiv</span><br>
+                                </h6>
+                                <br>
+                                <h6>
+                                    Kharkiv National Automobile and Highway University (HADI)<br>
+                                    Electro-Mechanic (Master's degree)<span class="date">September 2015 - December 2019 | Ukraine/Kharkiv</span><br>
+                                </h6>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

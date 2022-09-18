@@ -1,4 +1,4 @@
-package resume.base_controller;
+package resume.baseservices.base_controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,12 +12,12 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 @Controller
-public class Controller1 {
+public class BaseController {
     @GetMapping("/")
     public String getResumePage(Model model) {
         String filename = "images/Serge.jpg";
         String fileURL = "D:/JavaSerge/Resume/src/main/resources/static/" + filename;
-        int requiredImageHeight = 400;
+        int requiredImageHeight = 300;
         int width = 0;
         BufferedImage img;
         try {
