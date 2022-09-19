@@ -16,6 +16,18 @@ import java.util.Objects;
 public class BaseController {
     @GetMapping("/")
     public String getResumePage(Model model) {
+        String filename = "images/Serge.jpg";
+        int requiredImageHeight = 376;
+//        int width = calculateTheWidthOfThePicture(filename, requiredImageHeight);
+//        System.out.println("width = " + width);
+        int width = 279;
+        model.addAttribute("filename", filename);
+        model.addAttribute("height", requiredImageHeight);
+        model.addAttribute("width", width);
+        return "resume";
+    }
+
+    private int calculateTheWidthOfThePicture(String filename, int requiredImageHeight) {
         File urlProjectClass = new File(Objects.requireNonNull(this.getClass().getResource("")).getPath());
         String urlProject = urlProjectClass.toString().replace("\\", "/");
         String[] folders = urlProject.split("/");
@@ -28,9 +40,7 @@ public class BaseController {
                 resultURL.append(folder).append("/");
             }
         }
-        String filename = "images/Serge.jpg";
         String fileURL = resultURL.append(filename).toString();
-        int requiredImageHeight = 376;
         int width;
         BufferedImage img;
         try {
@@ -40,9 +50,6 @@ public class BaseController {
         } catch (IOException | URISyntaxException e) {
             throw new RuntimeException(e);
         }
-        model.addAttribute("filename", filename);
-        model.addAttribute("height", requiredImageHeight);
-        model.addAttribute("width", width != 0 ? width : "auto");
-        return "resume";
+        return width;
     }
 }
