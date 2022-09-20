@@ -17,10 +17,10 @@ public class BaseController {
     @GetMapping("/")
     public String getResumePage(Model model) {
         String filename = "images/Serge.png";
-        int requiredImageHeight = 314;
+        int requiredImageHeight = 294;
 //        int width = calculateTheWidthOfThePicture(filename, requiredImageHeight);
 //        System.out.println("width = " + width);
-        int width = 297;
+        int width = 278;
         model.addAttribute("filename", filename);
         model.addAttribute("height", requiredImageHeight);
         model.addAttribute("width", width);
