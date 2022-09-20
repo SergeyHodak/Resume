@@ -16,11 +16,11 @@ import java.util.Objects;
 public class BaseController {
     @GetMapping("/")
     public String getResumePage(Model model) {
-        String filename = "images/Serge.jpg";
-        int requiredImageHeight = 376;
+        String filename = "images/Serge.png";
+        int requiredImageHeight = 314;
 //        int width = calculateTheWidthOfThePicture(filename, requiredImageHeight);
 //        System.out.println("width = " + width);
-        int width = 279;
+        int width = 297;
         model.addAttribute("filename", filename);
         model.addAttribute("height", requiredImageHeight);
         model.addAttribute("width", width);
