@@ -9,9 +9,9 @@
           content="ie=edge">
     <title>Resume</title>
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
           rel="stylesheet"
-          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
           crossorigin="anonymous">
     <!--fonts start-->
     <link rel="preconnect"
@@ -50,10 +50,13 @@
         .indent-the-text {
             text-indent: 5%;
         }
+        .line-spacing {
+            padding: 13.8px;
+        }
     </style>
 </head>
 <body>
-    <div class="container mt-3">
+    <div class="container mt-3 mb-3">
         <div class="row row-cols-1 row-cols-md-3 g-10">
             <div class="col the-text-is-white">
                 <div class="card"  style="background-color:#33475b">
@@ -65,68 +68,65 @@
                         <h5 class="font-text">java developer</h5>
                     </div>
                     <hr class="border border-white border-2 opacity-100 col-11">
-                    <div class="card-body">
+                    <!-- m-3     ,це класс який встановлює поле зліва (в Bootstrap)-->
+                    <div class="card-body m-3">
                         <address>
                             <h5>CONTACTS</h5>
                             <div class="font-of-lists">
-                                <div><h6>+380934516875</h6></div>
-                                <div><h6>sergey.hodak3@gmail.com</h6></div>
-                                <div><h6><a href="https://github.com/SergeyHodak">Github</a></h6></div>
-                                <div><h6><a href="https://www.linkedin.com/in/сергій-ходак-081455250/">Linkedin</a></h6></div>
-                                <div><h6>Dnipro, Ukraine</h6></div>
+                                <h5>+380934516875</h5>
+                                <h5>sergey.hodak3@gmail.com</h5>
+                                <h5><a href="https://github.com/SergeyHodak">Github</a></h5>
+                                <h5><a href="https://www.linkedin.com/in/сергій-ходак-081455250/">Linkedin</a></h5>
+                                <h5>Dnipro, Ukraine</h5>
                             </div>
                         </address>
                         <br>
                         <section>
                             <h5>TECH SKILLS</h5>
                             <div class="font-of-lists">
-                                <h6>Java</h6>
-                                <h6>JDBC</h6>
-                                <h6>SQL</h6>
-                                <h6>JSON</h6>
-                                <h6>Hibernate</h6>
-                                <h6>Servlets</h6>
-                                <h6>Tomcat</h6>
-                                <h6>Spring</h6>
-                                <h6>Spring Boot</h6>
-                                <h6>H2 Database</h6>
-                                <h6>MySQL</h6>
-                                <h6>PostgeSQL</h6>
-                                <h6>HTML</h6>
-                                <h6>CSS</h6>
-                                <h6>Bootstrap</h6>
-                                <h6>IntelliJ IDEA</h6>
-                                <h6>Postman</h6>
-                                <h6>Heroku deploy</h6>
-                                <h6>Git</h6>
-                                <h6>Unit tests</h6>
-                                <h6>Scrum</h6>
-                                <h6>Kanban</h6>
-                                <h6>Trello</h6>
-                                <h6>Miro</h6>
-                                <h6>HTTP</h6>
+                                <h5>Java</h5>
+                                <h5>JDBC</h5>
+                                <h5>SQL</h5>
+                                <h5>JSON</h5>
+                                <h5>Hibernate</h5>
+                                <h5>Servlets</h5>
+                                <h5>Tomcat</h5>
+                                <h5>Spring</h5>
+                                <h5>Spring Boot</h5>
+                                <h5>H2 Database</h5>
+                                <h5>MySQL</h5>
+                                <h5>PostgeSQL</h5>
+                                <h5>HTML</h5>
+                                <h5>CSS</h5>
+                                <h5>Bootstrap</h5>
+                                <h5>IntelliJ IDEA</h5>
+                                <h5>Postman</h5>
+                                <h5>Git</h5>
+                                <h5>Unit tests</h5>
+                                <h5>Scrum</h5>
+                                <h5>Kanban</h5>
                             </div>
                         </section>
                         <br>
                         <section>
                             <h5>SOFT SKILLS</h5>
                             <div class="font-of-lists">
-                                <h6>Organized</h6>
-                                <h6>Willingness to learn</h6>
-                                <h6>
+                                <h5>Organized</h5>
+                                <h5>Willingness to learn</h5>
+                                <h5>
                                     Ability to work in a team (Team lead of two projects [
                                     <a href="https://github.com/SergeyHodak/GoIT_Java_Core_Online_5_Project_1">1</a>,
                                     <a href="https://github.com/SergeyHodak/JavaDevelopersTeamProjectGroup2"> 2</a>])
-                                </h6>
+                                </h5>
                             </div>
                         </section>
                         <br>
                         <section>
                             <h5>LANGUAGES</h5>
                             <div class="font-of-lists">
-                                <div><h6>Ukrainian — native</h6></div>
-                                <div><h6>Russian — fluent</h6></div>
-                                <div><h6>English — elementary</h6></div>
+                                <h5>Ukrainian — native</h5>
+                                <h5>Russian — fluent</h5>
+                                <h5>English — elementary</h5>
                             </div>
                         </section>
                     </div>
@@ -139,7 +139,7 @@
                         <section>
                             <h4 class="header-background-color">SUMMARY</h4>
                             <div>
-                                <h5 class="right-column-text-font">
+                                <h5 class="right-column-text-font line-spacing">
                                     I changed the direction of work, learned a lot on my own, completed a 10-month Java
                                     developer course, now I am a junior Java developer. I studied hard, and now I want
                                     to put my knowledge into practice. I want to develop as a specialist and be as
@@ -152,7 +152,7 @@
                         <br>
                         <section>
                             <h4 class="header-background-color">PROJECTS</h4>
-                            <div class="right-column-text-font">
+                            <div class="right-column-text-font line-spacing">
                                 <h5>
                                     <a href="https://github.com/SergeyHodak/JavaDevelopersTeamProjectGroup2">GoIT Notes</a> <br>
                                     The project for writing notes. Command project. Part of the code that is responsible for
@@ -184,7 +184,7 @@
                         <br>
                         <section>
                             <h4 class="header-background-color">WORK EXPERIENCE</h4>
-                            <div class="right-column-text-font">
+                            <div class="right-column-text-font line-spacing">
                                 <h5>
                                     Atlant M Dnipro<span class="date">January 2020 - October 2020 | Ukraine/Dnipro</span><br>
                                     Master to repair vehicles<br>
@@ -201,7 +201,7 @@
                                     Electro-Mechanic<br>
                                     <br>
                                     <div class="indent-the-text">
-                                        <li>repair of starters and generators for: KAMAZ, KrAZ, Gazel, armoured vehicle, MAN</li>
+                                        <li>repair of starters and generators for: KAMAZ, KrAZ, Gazel, armoured vehicle</li>
                                         <li>repair of electrical equipment, lighting, trailers</li>
                                     </div>
                                 </h5>
@@ -221,7 +221,7 @@
                         <br>
                         <section>
                             <h4 class="header-background-color">EDUCATION</h4>
-                            <div class="right-column-text-font">
+                            <div class="right-column-text-font line-spacing">
                                 <h5>
                                     GO-IT<br>
                                     Java Developer<span class="date">November 2021 - September 2022 | Ukraine/Kyiv</span><br>
